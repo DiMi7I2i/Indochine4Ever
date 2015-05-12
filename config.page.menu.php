@@ -3,7 +3,7 @@
 $cfg['page_index'] = 'index.php';
 $cfg['page_offer'] = 'special_offer_page.php';
 $cfg['page_livraison'] = 'delivery_page.php';
-$cfg['page_contact'] = 'index.php';
+$cfg['page_contact'] = 'contact_page.php';
 $cfg['page_produit'] = 'produit_liste.php';
 $cfg['page_inscription'] = 'register_page.php';
 
