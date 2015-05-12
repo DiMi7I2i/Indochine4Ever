@@ -68,8 +68,8 @@ if ($productID > 0){
  <div class="control-group">
 <label class="control-label"><span>
     <?php
-                   echo '<span>'.formatDevise($detailProduit['ProductPrice']).'</span>'
-               ?>
+    	echo '<span>'.formatDevise($detailProduit['ProductPrice']).'</span>'
+    ?>
 </span></label>
 <div class="controls">
 <input type="number" class="span1" placeholder="Qty."/>

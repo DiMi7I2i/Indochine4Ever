@@ -1,4 +1,3 @@
-<!-- ==================================================Header End====================================================================== -->
 <div class="row">
 <div id="sidebar" class="span3">
 	<ul class="nav nav-list bs-docs-sidenav" style="display: block;">											
