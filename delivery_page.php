@@ -1,6 +1,6 @@
 <?php
 include 'ini.php';
 include 'header.php';
-include 'detail.php';
+include 'delivery.php';
 include 'footer.php';
 ?>

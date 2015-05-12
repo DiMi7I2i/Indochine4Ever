@@ -1,6 +1,6 @@
 <?php
 include 'ini.php';
 include 'header.php';
-include 'offre_speciale.php';
+include 'special_offer.php';
 include 'footer.php';
 ?>
