@@ -1,12 +1,15 @@
 <?php
 
 $cfg['page_index'] = 'index.php';
-$cfg['page_offer'] = 'bootsshop/special_offer.html';
-$cfg['page_livraison'] = 'bootsshop/normal.html';
-$cfg['page_contact'] = 'bootsshop/contact.html';
+$cfg['page_offer'] = 'offre_speciale_page.php';
+$cfg['page_livraison'] = 'index.php';
+$cfg['page_contact'] = 'index.php';
 $cfg['page_produit'] = 'produit_liste.php';
+$cfg['page_inscription'] = 'register_page.php';
 
-function afficheMenuHeader(){
+function afficheMenuHeader()
+{
+
  	echo '<ul class="nav">';
 	echo '<li class="active"><a href="'.$GLOBALS['cfg']['page_index'].'">'.afficherLibelle('accueil').'</a></li>';
 	echo '<li class=""><a href="'.$GLOBALS['cfg']['page_offer'].'">'.afficherLibelle('bouton_special_offer').'</a></li>';
