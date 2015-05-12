@@ -66,6 +66,7 @@ function afficheListeProduit($produitBase){
 		if($aucunProduit){
 			echo "Aucun produit trouvé";
 		}
+	
 }
 
 //affiche un produit
@@ -103,7 +104,7 @@ function formatDevise($prix){
 function rechercheProduit($terme,$conn){
 	try
 	{
-		$requete = "SELECT * FROM products WHERE ProductName LIKE                                                                                                 or ProductID LIKE '%$terme%'";
+		$requete = "SELECT * FROM products WHERE ProductName LIKE '%$terme%' or ProductID LIKE '%$terme%'";
     	$resultat = mysql_query($requete,$conn);
 		afficheListeProduit($resultat);
 	}

@@ -124,7 +124,7 @@
 		<div class="control-group">
 		<label class="control-label" for="dob">Date of Birth <sup>*</sup></label>
 		<div class="controls">
-		  <select class="span1" name="days">
+		  <select class="span1" name="jour">
 				<option value="">-</option>
 					<option value="1">1&nbsp;&nbsp;</option>
 					<option value="2">2&nbsp;&nbsp;</option>
@@ -134,7 +134,7 @@
 					<option value="6">6&nbsp;&nbsp;</option>
 					<option value="7">7&nbsp;&nbsp;</option>
 			</select>
-			<select class="span1" name="days">
+			<select class="span1" name="mois">
 				<option value="">-</option>
 					<option value="1">1&nbsp;&nbsp;</option>
 					<option value="2">2&nbsp;&nbsp;</option>
@@ -144,7 +144,7 @@
 					<option value="6">6&nbsp;&nbsp;</option>
 					<option value="7">7&nbsp;&nbsp;</option>
 			</select>
-			<select class="span1" name="days">
+			<select class="span1" name="annee">
 				<option value="">-</option>
 					<option value="1">1&nbsp;&nbsp;</option>
 					<option value="2">2&nbsp;&nbsp;</option>
@@ -163,11 +163,11 @@
 		<div class="control-group">
 			<label class="control-label" for="inputFname">First name <sup>*</sup></label>
 			<div class="controls">
-			  <input type="text" id="inputFname" placeholder="First Name">
+			  <input type="text" name="txtNom" id="inputFname" placeholder="First Name">
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="inputLname">Last name <sup>*</sup></label>
+			<label class="control-label" name="txtPrenom" for="inputLname">Last name <sup>*</sup></label>
 			<div class="controls">
 			  <input type="text" id="inputLname" placeholder="Last Name"/>
 			</div>
@@ -176,27 +176,27 @@
 		<div class="control-group">
 			<label class="control-label" for="company">Company</label>
 			<div class="controls">
-			  <input type="text" id="company" placeholder="company"/>
+			  <input type="text" id="company" name="txtEntreprise" placeholder="company"/>
 			</div>
 		</div>
 		
 		<div class="control-group">
 			<label class="control-label" for="adress">Address<sup>*</sup></label>
 			<div class="controls">
-			  <input type="text" id="address" placeholder="Adress"/> <span>Street address, P.O. box, company name, c/o</span>
+			  <input type="text" id="address" name="txtAdresse" placeholder="Adress"/> <span>Street address, P.O. box, company name, c/o</span>
 			</div>
 		</div>
 		
 		<div class="control-group">
 			<label class="control-label" for="adress2">Address (Line 2)<sup>*</sup></label>
 			<div class="controls">
-			  <input type="text" id="address2" placeholder="Adress line 2"/> <span>Apartment, suite, unit, building, floor, etc.</span>
+			  <input type="text" id="address2" name="adresseComp" placeholder="Adress line 2"/> <span>Apartment, suite, unit, building, floor, etc.</span>
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="city">City<sup>*</sup></label>
 			<div class="controls">
-			  <input type="text" id="city" placeholder="city"/> 
+			  <input type="text" id="city" name="ville" placeholder="city"/> 
 			</div>
 		</div>
 		<div class="control-group">

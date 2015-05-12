@@ -74,9 +74,11 @@ include 'config.page.menu.php';
 							<input type="checkbox"> Remember me
 							</label>
 							<button type="submit" class="btn btn-block">Sign in</button>
+						</form>	
+							<form action="register_page.php" method="get" class="form-horizontal">
 							<button type="submit" class="btn btn-block">Sign up</button>
+							</form>					
 						  </div>
-						</form>					
 						</div>
 					</li>
 					</ul>
