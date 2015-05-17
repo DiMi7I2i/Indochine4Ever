@@ -1,11 +1,11 @@
 <hr class="soften">
 <div>
-	<h1>Visit us</h1>
+	<h1><?php echo afficherLibelle('rendezNousVisite') ?></h1>
 </div>
 <hr class="soften" />
 <div class="row">
 	<div class="span4">
-		<h4>Contact Details</h4>
+		<h4><?php echo afficherLibelle('coordonnees') ?></h4>
 		<p>
 			18 Fresno,<br /> CA 93727, USA <br />
 			<br /> info@bootsshop.com<br /> ﻿Tel 123-456-6780<br /> Fax
@@ -14,44 +14,39 @@
 	</div>
 
 	<div class="span4">
-		<h4>Opening Hours</h4>
-		<h5>Monday - Friday</h5>
+		<h4><?php echo afficherLibelle('horairesOuverture') ?></h4>
+		<h5><?php echo afficherLibelle('lundi').' - '. afficherLibelle('vendredi')?></h5>
 		<p>
-			09:00am - 09:00pm<br />
-			<br />
+			<?php echo afficherLibelle('9H').' - '.afficherLibelle('21H') ?><br /><br />
 		</p>
-		<h5>Saturday</h5>
+		<h5><?php echo afficherLibelle('samedi') ?></h5>
 		<p>
-			09:00am - 07:00pm<br />
-			<br />
+			<?php echo afficherLibelle('9H').' - '.afficherLibelle('19H') ?><br /><br />
 		</p>
-		<h5>Sunday</h5>
+		<h5><?php echo afficherLibelle('dimanche') ?></h5>
 		<p>
-			12:30pm - 06:00pm<br />
-			<br />
+			<?php echo afficherLibelle('12H30').' - '.afficherLibelle('18H') ?><br /><br />
 		</p>
 	</div>
 	<div class="span4">
-		<h4>Email Us</h4>
-		<form class="form-horizontal" action="sendContactMail.php" method="post">
+		<h4><?php echo afficherLibelle('ecrivezNous') ?></h4>
+			<form class="form-horizontal" action="sendContactMail.php" method="post">
 			<fieldset>
 				<div class="control-group">
-					<input type="text" name="txtName" placeholder="name" class="input-xlarge" />
+					<input type="text" name="txtName" placeholder="<?php echo afficherLibelle('nom') ?>" class="input-xlarge" />
 				</div>
 				<div class="control-group">
-					<input type="text" name="txtMail" placeholder="email" class="input-xlarge" />
+					<input type="text" name="txtMail" placeholder="Email" class="input-xlarge" />
 				</div>
 				<div class="control-group">
-					<input type="text" name="txtSubject" placeholder="subject" class="input-xlarge" />
+					<input type="text" name="txtSubject" placeholder="<?php echo afficherLibelle('objet') ?>" class="input-xlarge" />
 				</div>
 				<div class="control-group">
 					<textarea rows="3" id="textarea" name="txtMessage" class="input-xlarge"></textarea>
 				</div>
-
-				<button class="btn btn-large" type="submit">Send Messages</button>
-
+				<button class="btn btn-large" type="submit"><?php echo afficherLibelle('envoyerMessage') ?></button>
 			</fieldset>
-		</form>
+		</form>			
 	</div>
 </div>
 <div class="row">

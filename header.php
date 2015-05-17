@@ -56,7 +56,9 @@ include 'config.page.menu.php';
                    afficheMenuHeader();
                    ?>
                     <form action="produits_search.php" class="navbar-search pull-left" method="post">
-                     <input id="srchFld" type="text" placeholder="I'm looking for ..." class="search-query span5" name="produitname"/>
+                    <?php 
+                    	echo '<input id="srchFld" type="text" placeholder="'.afficherLibelle('jeCherche').'..." class="search-query span5" name="produitname"/>'
+                    ?>
                     </form>
                     <ul class="nav pull-right">
 					<li class="dropdown">
@@ -94,6 +96,9 @@ include 'config.page.menu.php';
 	<a href="<?php echo $cfg['page_index'];?>"><img src="bootsshop/assets/img/logo.png" alt="Bootsshop"/></a>
 
 <div class="pull-right"> <br/>
+	<a href=""><?php choixLangue('fr'); ?> <img src="bootsshop/assets/img/fr_drapeau.png" alt="Langue FR"/> </a>
+	<a href=""><?php choixLangue('en'); ?> <img src="bootsshop/assets/img/en_drapeau.png" alt="Langue EN"/> </a>
+
 	<a href="produit_sommaire_page.php"> <span class="btn btn-mini btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
 	<a href="produit_sommaire_page.php"><span class="btn btn-mini active">$155.00</span></a>
 	<span class="btn btn-mini">&pound;</span>
