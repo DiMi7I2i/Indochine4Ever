@@ -382,3 +382,6 @@
 <br class="clr"/>
 </div>
 </div>
+<script>
+document.getElementById('idPageSpecialOffer').className = "active";
+</script>

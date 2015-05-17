@@ -10,10 +10,10 @@ $cfg['page_inscription'] = 'register_page.php';
 function afficheMenuHeader()
 {
  	echo '<ul class="nav">';
-	echo '<li class="active"><a href="'.$GLOBALS['cfg']['page_index'].'">'.afficherLibelle('accueil').'</a></li>';
-	echo '<li class=""><a href="'.$GLOBALS['cfg']['page_offer'].'">'.afficherLibelle('bouton_special_offer').'</a></li>';
-	echo '<li class=""><a href="'.$GLOBALS['cfg']['page_livraison'].'">'.afficherLibelle('livraison').'</a></li>';
-	echo '<li class=""><a href="'.$GLOBALS['cfg']['page_contact'].'">'.afficherLibelle('contact').'</a></li>';
+	echo '<li id="idPageIndex" class=""><a href="'.$GLOBALS['cfg']['page_index'].'">'.afficherLibelle('accueil').'</a></li>';
+	echo '<li id="idPageSpecialOffer" class=""><a href="'.$GLOBALS['cfg']['page_offer'].'">'.afficherLibelle('bouton_special_offer').'</a></li>';
+	echo '<li id="idPageLivraison" class=""><a href="'.$GLOBALS['cfg']['page_livraison'].'">'.afficherLibelle('livraison').'</a></li>';
+	echo '<li id="idPageContact" class=""><a href="'.$GLOBALS['cfg']['page_contact'].'">'.afficherLibelle('contact').'</a></li>';
 	echo '</ul>';
 }
 

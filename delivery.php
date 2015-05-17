@@ -103,3 +103,6 @@ Aliquam interdum, ipsum a posuere dictum, tellus risus blandit dolor, at tristiq
 	</p>
 </div>
 </div>
+<script>
+document.getElementById('idPageLivraison').className = "active";
+</script>

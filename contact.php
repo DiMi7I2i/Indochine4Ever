@@ -33,26 +33,19 @@
 	</div>
 	<div class="span4">
 		<h4>Email Us</h4>
-		<form class="form-horizontal">
+		<form class="form-horizontal" action="sendContactMail.php" method="post">
 			<fieldset>
 				<div class="control-group">
-
-					<input type="text" placeholder="name" class="input-xlarge" />
-
+					<input type="text" name="txtName" placeholder="name" class="input-xlarge" />
 				</div>
 				<div class="control-group">
-
-					<input type="text" placeholder="email" class="input-xlarge" />
-
+					<input type="text" name="txtMail" placeholder="email" class="input-xlarge" />
 				</div>
 				<div class="control-group">
-
-					<input type="text" placeholder="subject" class="input-xlarge" />
-
+					<input type="text" name="txtSubject" placeholder="subject" class="input-xlarge" />
 				</div>
 				<div class="control-group">
-					<textarea rows="3" id="textarea" class="input-xlarge"></textarea>
-
+					<textarea rows="3" id="textarea" name="txtMessage" class="input-xlarge"></textarea>
 				</div>
 
 				<button class="btn btn-large" type="submit">Send Messages</button>
@@ -72,3 +65,6 @@
 			style="color: #0000FF; text-align: left">View Larger Map</a></small>
 	</div>
 </div>
+<script>
+document.getElementById('idPageContact').className = "active";
+</script>
