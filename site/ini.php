@@ -1,8 +1,9 @@
 <?php
+session_start();
 include 'config.php';
 include 'multilangue.php';
 include 'fonction.php';
-session_start();
+initLangue();
 $conn= connecterDatabase();
 connecterDatabaseBdd($conn);
 ?>

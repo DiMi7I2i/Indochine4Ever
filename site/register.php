@@ -250,7 +250,7 @@
 			<div class="controls">
 				<input type="hidden" name="email_create" value="1">
 				<input type="hidden" name="is_new_customer" value="1">
-				<input class="btn btn-large" type="submit" value="Register" onClick="alert('prout');"/>
+				<input class="btn btn-large" type="submit" value="Register" />
 			</div>
 		</div>		
 	</form>

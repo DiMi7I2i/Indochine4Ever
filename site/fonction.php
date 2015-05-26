@@ -117,4 +117,10 @@ function rechercheProduit($terme,$conn){
 	
 }
 
+function initLangue(){
+	if (!isset($_SESSION['langue'])){
+		$_SESSION['langue'] = 'en';
+	}
+}
+
 ?>
