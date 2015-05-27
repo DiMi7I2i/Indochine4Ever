@@ -3,19 +3,19 @@ class user {
 	
 	//Variables
 	//====================================================
-	$userId;
-	$userEmail;
-	$userPassword;
-	$userFirstName;
-	$userLastName;
-	$userCity;
-	$userState;
-	$userZip;
-	$userPhone;
-	$userFax;
-	$userCountry;
-	$userAddress;
-	$userAddress2;
+	public $userId;
+	public $userEmail;
+	public $userPassword;
+	public $userFirstName;
+	public $userLastName;
+	public $userCity;
+	public $userState;
+	public $userZip;
+	public $userPhone;
+	public $userFax;
+	public $userCountry;
+	public $userAddress;
+	public $userAddress2;
 	
 	
 }

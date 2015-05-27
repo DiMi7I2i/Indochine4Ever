@@ -1,19 +1,10 @@
 <?php
 
-	class caddie {
-		
-		//Variables
-		//====================================================
-		public $variables = array(
-				"id"=>"",
-				"listeProduit"=>"",
-				"prix"
-		
-		);
-		
-		
-		function function_name() {
-			;
-		}
-	}
+class caddie {
+	
+	//Variables
+	//====================================================
+	public $caddieId;
+	public $listeLigne= array(); //liste de la liste de caddie
+}
 ?>
