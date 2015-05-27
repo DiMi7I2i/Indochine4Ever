@@ -1,4 +1,6 @@
 <?php
+//init de la session
+session_start();
 // Inclusion du header
 include 'ini.php';
 // Inclusion du header
