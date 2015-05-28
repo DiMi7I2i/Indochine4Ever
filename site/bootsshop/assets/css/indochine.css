@@ -1,0 +1,11 @@
+.enligne {
+	display:inline-block;
+}
+
+.drapeauFR {
+	background-image:url("assets/img/fr_drapeau.png");
+}
+
+.drapeauEN {
+	background-image:url("assets/img/en_drapeau.png");
+}

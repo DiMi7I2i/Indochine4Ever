@@ -23,6 +23,7 @@ if (isset ($_GET['btFR'])){
 	 
     <link href="bootsshop/style.css" rel="stylesheet"/>
 	<link href="bootsshop/assets/js/google-code-prettify/prettify.css" rel="stylesheet"/>
+	<link href="bootsshop/assets/css/indochine.css" rel="stylesheet"/>
 	
 	<!-- Less styles  
 	<link rel="stylesheet/less" type="text/css" href="less/bootsshop.less">
@@ -100,11 +101,11 @@ if (isset ($_GET['btFR'])){
 	<a href="<?php echo $cfg['page_index'];?>"><img src="bootsshop/assets/img/logo.png" alt="Bootsshop"/></a>
 
 <div class="pull-right"> <br/>
-	<form action="#" method="get">
-	<input type="submit" src="bootsshop/assets/img/fr_drapeau.png" name="btFR" style="display:inline-block;" alt="Langue FR" value="fr"/>
+	<form action="#" method="get" id="formFR" class="enligne">
+		<a href="" name="btFR" value="fr" onclick="$('#formFR').submit();"> <input type="image" src="bootsshop/assets/img/fr_drapeau.png" style="" alt="Langue FR" value="fr"/></a>
 	</form>
-	<form action="#" method="get">
-	<input type="submit" src="bootsshop/assets/img/en_drapeau.png" name="btEN" style="display:inline-block;" alt="Langue EN" value="en"/>
+	<form action="#" method="get" id="formEN" class="enligne">
+		<a href="" name="btEN" value="en" onclick="$('#formEN').submit();"><input type="image" src="bootsshop/assets/img/en_drapeau.png"  style="" alt="Langue EN" value="en"/></a>
 	</form>
 	
 	<a href="produit_sommaire_page.php"> <span class="btn btn-mini btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
