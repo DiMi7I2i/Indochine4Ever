@@ -1,10 +1,8 @@
 ﻿<?php
 // Inclusion des configs header
 include 'config.page.menu.php';
-if (isset ($_GET['btFR'])){
-	choixLangue($_GET['btFR']);
-} else if (isset($_GET['btEN'])){
-	choixLangue($_GET['btEN']);
+if (isset ($_GET['lang'])){
+	choixLangue($_GET['lang']);
 }
 ?>
 <!DOCTYPE html>
@@ -101,12 +99,8 @@ if (isset ($_GET['btFR'])){
 	<a href="<?php echo $cfg['page_index'];?>"><img src="bootsshop/assets/img/logo.png" alt="Bootsshop"/></a>
 
 <div class="pull-right"> <br/>
-	<form action="#" method="get" id="formFR" class="enligne">
-		<a href="" name="btFR" value="fr" onclick="$('#formFR').submit();"> <input type="image" src="bootsshop/assets/img/fr_drapeau.png" style="" alt="Langue FR" value="fr"/></a>
-	</form>
-	<form action="#" method="get" id="formEN" class="enligne">
-		<a href="" name="btEN" value="en" onclick="$('#formEN').submit();"><input type="image" src="bootsshop/assets/img/en_drapeau.png"  style="" alt="Langue EN" value="en"/></a>
-	</form>
+		<a href="?lang=fr"> <img src="bootsshop/assets/img/fr_drapeau.png" alt="Langue FR" /></a>
+		<a href="?lang=en"><img src="bootsshop/assets/img/en_drapeau.png"  alt="Langue EN" /></a>
 	
 	<a href="produit_sommaire_page.php"> <span class="btn btn-mini btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
 	<a href="produit_sommaire_page.php"><span class="btn btn-mini active">$155.00</span></a>
