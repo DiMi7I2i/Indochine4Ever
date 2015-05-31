@@ -8,7 +8,10 @@ $fr = array(
 	'compte' 				=> 'Mon compte',
 	'detail' 				=> 'Détail',
 	'livraison' 			=> 'Livraison',
-	'jeCherche'				=> 'Je cherche',	
+	'jeCherche'				=> 'Je cherche',
+
+	// Index page
+	'nouveauxProduits'		=> 'Nouveaux produits',
 
 	// Contact page
 	'rendezNousVisite' 		=> 'Rendez-nous visite',
@@ -49,7 +52,24 @@ $fr = array(
 	'telFixe'				=> 'Téléphone fixe',
 	'indicationTelFixe'		=> 'Vous devez enregistrer au moins un numéro',
 	'telMobile'				=> 'Téléphone mobile',
-	'champsObligatoires'	=> 'Champs obligatoires'		
+	'champsObligatoires'	=> 'Champs obligatoires',
+
+	// Footer
+	'compte'				=> 'Compte',
+	'votre'					=> 'Votre',
+	'infosPersonnelles'		=> 'Informations personnelles',
+	'adresses'				=> 'Adresses',
+	'reduction'				=> 'Reduction',
+	'histoCommande'			=> 'Historique des commandes',
+	'enregistrement'		=> 'Enregistrement',
+	'mentionLegale'			=> 'Mention legale',
+	'termesEtConditions'	=> 'Termes et conditions',
+	'nosOffres'				=> 'Nos offres',
+	'topVentes'				=> 'Top ventes',
+	'offresSpeciales'		=> 'Offres speciales',
+	'fabricants'			=> 'Fabricants',
+	'fournisseurs'			=> 'Fournisseurs',
+	'mediaSocial'			=> 'Media social'
 		
 );
 
@@ -61,7 +81,10 @@ $en = array(
 	'compte' 				=> 'Account',
 	'detail' 				=> 'Détail',
 	'livraison' 			=> 'Delivery',
-	'jeCherche'				=> 'I\'m looking for',	
+	'jeCherche'				=> 'I\'m looking for',
+
+	// Index page
+	'nouveauxProduits'		=> 'New products',
 		
 	// Contact page
 	'rendezNousVisite' 		=> 'Visit Us',
@@ -102,7 +125,24 @@ $en = array(
 	'telFixe'				=> 'Home phone',
 	'indicationTelFixe'		=> 'You must register at least one phone number',
 	'telMobile'				=> 'Mobile Phone',
-	'champsObligatoires'	=> 'Required field'
+	'champsObligatoires'	=> 'Required field',
+	
+	// Footer
+	'compte'				=> 'Account',
+	'votre'					=> 'Your',
+	'infosPersonnelles'		=> 'Personal information',
+	'adresses'				=> 'Addresses',
+	'reduction'				=> 'Discount',
+	'histoCommande'			=> 'Order history',
+	'enregistrement'		=> 'Registration',
+	'mentionLegale'			=> 'Legal notice',
+	'termesEtConditions'	=> 'Terms and conditions',
+	'nosOffres'				=> 'Our offers',
+	'topVentes'				=> 'Top sellers',
+	'offresSpeciales'		=> 'Special offers',
+	'fabricants'			=> 'Manufacturers',
+	'fournisseurs'			=> 'Suppliers',
+	'mediaSocial'			=> 'Social media'
 		
 		
 );
