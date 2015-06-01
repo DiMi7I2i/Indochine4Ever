@@ -7,9 +7,9 @@
 	<div class="span4">
 		<h4><?php echo afficherLibelle('coordonnees') ?></h4>
 		<p>
-			18 Fresno,<br /> CA 93727, USA <br />
-			<br /> info@bootsshop.com<br /> ﻿Tel 123-456-6780<br /> Fax
-			123-456-5679<br /> web:bootsshop.com
+			61 rue Albert Camus,<br /> 68200, Mulhouse <br />
+			<br /> info@cnam-alsace.fr<br /> ﻿Tel 03 89 42 67 09<br /> Fax
+			123-456-5679<br /> http://www.cnam-alsace.fr/
 		</p>
 	</div>
 

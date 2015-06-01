@@ -81,14 +81,39 @@ $fr = array(
 	'reduction'				=> 'Reduction',
 	'histoCommande'			=> 'Historique des commandes',
 	'enregistrement'		=> 'Enregistrement',
-	'mentionLegale'			=> 'Mention legale',
+	'mentionLegale'			=> 'Mentions legales',
 	'termesEtConditions'	=> 'Termes et conditions',
 	'nosOffres'				=> 'Nos offres',
 	'topVentes'				=> 'Top ventes',
 	'offresSpeciales'		=> 'Offres speciales',
 	'fabricants'			=> 'Fabricants',
 	'fournisseurs'			=> 'Fournisseurs',
-	'mediaSocial'			=> 'Media social'
+	'mediaSocial'			=> 'Media social',
+		
+	// SideBar
+	'musique'				=> 'Musique',
+	'cd'					=> 'CD',
+	'vinyles'				=> 'Vinyles',
+	
+	'videos'				=> 'Vidéos',	
+	'dvdBluray'				=> 'DVD / Bluray',	
+		
+	'vetements'				=> 'Vêtements',
+	'vetementsHommes'		=> 'Vêtements Hommes',
+	'chaussuresHommes'		=> 'Chaussures Hommes',
+	'vetementsFemmes'		=> 'Vêtements Femmes',
+	'chaussuresFemmes'		=> 'Chaussures Femmes',
+	'vetementsEnfants'		=> 'Vêtements Enfants',
+	'chaussuresEnfants'		=> 'Chaussures Enfants',
+		
+	'goodies'				=> 'Goodies',
+	'accessoires'			=> 'Accessoires',
+	'collectors'			=> 'Collectors',
+
+	// Legal notice
+	'raisonSociale'			=> 'Raison sociale',
+	'siegeSocial'			=> 'Siège social',
+	'auteursDuSite'			=> 'Auteurs du site'		
 		
 );
 
@@ -180,8 +205,32 @@ $en = array(
 	'offresSpeciales'		=> 'Special offers',
 	'fabricants'			=> 'Manufacturers',
 	'fournisseurs'			=> 'Suppliers',
-	'mediaSocial'			=> 'Social media'
+	'mediaSocial'			=> 'Social media',
 		
+	// SideBar
+	'musique'				=> 'Music',
+	'cd'					=> 'CD',
+	'vinyles'				=> 'Vinyles',
+		
+	'videos'				=> 'Videos',
+	'dvdBluray'				=> 'DVD / Bluray',
+		
+	'vetements'				=> 'Clothes',
+	'vetementsHommes'		=> 'Men\'s Clothings',
+	'chaussuresHommes'		=> 'Men\'s Shoes',
+	'vetementsFemmes'		=> 'Women\'s Clothing',
+	'chaussuresFemmes'		=> 'Women\'s Shoes',
+	'vetementsEnfants'		=> 'Kids Clothing',
+	'chaussuresEnfants'		=> 'Kids Shoes',
+
+	'goodies'				=> 'Goodies',
+	'accessoires'			=> 'Accessories',
+	'collectors'			=> 'Collectors',
+
+	// Legal notice
+	'raisonSociale'			=> 'Social reason',
+	'siegeSocial'			=> 'Headquarters',
+	'auteursDuSite'			=> 'Site Authors'
 		
 );
 

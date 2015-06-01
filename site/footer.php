@@ -14,8 +14,8 @@
 			<h5>INFORMATION</h5>
 			<a href="contact_page.php">CONTACT</a>  
 			<a href="register_page.php"><?php echo strtoupper(afficherLibelle('enregistrement')) ?></a>  
-			<a href="bootsshop/legal_notice.html"><?php echo strtoupper(afficherLibelle('mentionLegale')) ?></a>  
-			<a href="bootsshop/tac.html"><?php echo strtoupper(afficherLibelle('termesEtConditions')) ?></a> 
+			<a href="mentions_legales_page.php"><?php echo strtoupper(afficherLibelle('mentionLegale')) ?></a>  
+			<a href="delivery_page.php"><?php echo strtoupper(afficherLibelle('termesEtConditions')) ?></a> 
 			<a href="bootsshop/faq.html">FAQ</a>
 		 </div>
 		<div class="span3">
@@ -35,7 +35,7 @@
 		 </div> 
 	 </div>
 	 <hr class="soft">
-	<p class="pull-right">&copy; Boot'sshop</p>
+	<p class="pull-right">&copy; Indochine4Ever</p>
 </div><!-- /container -->
 
 
