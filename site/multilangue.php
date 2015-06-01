@@ -12,7 +12,26 @@ $fr = array(
 
 	// Index page
 	'nouveauxProduits'		=> 'Nouveaux produits',
-
+	
+	// Delivry page
+	'conditionsEtFraisLiv'	=> 'Conditions et frais de livraison',
+	'frais'					=> 'Frais',
+	'delais'				=> 'Délais',
+	'livraison1JOuvre'		=> 'Livraison en 1 jour ouvré',
+	'livraison2JOuvres'		=> 'Livraison en 2 jours ouvrés',
+	'livraison2A3JOuvres'	=> 'Livraison en 2 à 3 jours ouvrés',
+	'livraisonLendemain'	=> 'Livraison le lendemain',
+	'livraisonPrioritaire'	=> 'Livraison Prioritaire',
+	'entre9hEt18h'			=> 'entre 9h et 18h',
+	'pourCmdLundiAuVendredi'=> 'pour les commandes passées du lundi au vendredi',
+	'ouLivraisonJourSortie'	=> 'ou le jour de la sortie pour la Livraison garantie le jour de la sortie',
+	'7.99EnvoiMedia'		=> '7,99 EUR par envoi pour les articles média (Livres, Musique et DVD)',		
+	'9.99AutresArticlesElig'=> '9,99 EUR par envoi pour les autres articles éligibles',
+	'2.99ParEnvoiLivJourSor'=> '2,99 EUR par envoi pour la Livraison garantie le jour de la sortie',	
+	'commentaireDelais1JOuv'=> 'Disponible pour la grande majorité des articles expédiés par Boot\'sshop. Pour la livraison garantie le jour de la sortie, la page du produit indique si l\'article peut en bénéficier.',	
+	'commentaireDelais2JOuv'=> 'Disponible sur certains articles expédiés par Boot\'sshop et en stock uniquement dans un de nos centres de distribution Européens, la page du produit indique si l\'article peut en bénéficier.',
+	'commentaireDelaisPrior'=> 'Disponible uniquement pour certains articles expédiés par Boot\'sshop.',		
+		
 	// Contact page
 	'rendezNousVisite' 		=> 'Rendez-nous visite',
 	'horairesOuverture'		=> 'Horaires d\'ouvertures',
@@ -85,6 +104,25 @@ $en = array(
 
 	// Index page
 	'nouveauxProduits'		=> 'New products',
+		
+	// Delivry page
+	'conditionsEtFraisLiv'	=> 'Conditions and shipping costs',
+	'frais'					=> 'Expense',	
+	'delais'				=> 'Time',	
+	'livraison1JOuvre'		=> 'Delivery in 1 business day',
+	'livraison2JOuvres'		=> 'Delivery in 2 business days',
+	'livraison2A3JOuvres'	=> 'Delivery in 2-3 days',	
+	'livraisonLendemain'	=> 'Next day delivery',
+	'livraisonPrioritaire'	=> 'Priority delivery',
+	'entre9hEt18h'			=> 'between 9h and 18h',
+	'pourCmdLundiAuVendredi'=> 'for orders placed Monday through Friday',
+	'ouLivraisonJourSortie'	=> 'or the release day for guaranteed delivery the day of release',
+	'7.99EnvoiMedia'		=> '€ 7.99 per item for items Media (Books, Music and DVD)',
+	'9.99AutresArticlesElig'=> '€ 9.99 per shipment for other eligible products',	
+	'2.99ParEnvoiLivJourSor'=> '€ 2.99 per shipment for guaranteed delivery the day of release',	
+	'commentaireDelais1JOuv'=> 'Available for most items shipped by Boot\'sshop. For guaranteed delivery on the day of the release, the product page indicates whether the item can benefit.',
+	'commentaireDelais2JOuv'=> 'Available on select items shipped by Boot\'sshop in stock and only in one of our European distribution centers, the product page indicates whether the item can benefit.',
+	'commentaireDelaisPrior'=> 'Available only for certain items shipped by Boot\'sshop.',
 		
 	// Contact page
 	'rendezNousVisite' 		=> 'Visit Us',
