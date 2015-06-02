@@ -3,31 +3,31 @@
 <div  id="footerSection">
 	<div class="row">
 		<div class="span3">
-			<h5>ACCOUNT</h6>
-			<a href="bootsshop/login.html">YOUR ACCOUNT</a>
-			<a href="bootsshop/login.html">PERSONAL INFORMATION</a> 
-			<a href="bootsshop/login.html">ADDRESSES</a> 
-			<a href="bootsshop/login.html">DISCOUNT</a>  
-			<a href="bootsshop/login.html">ORDER HISTORY</a>
+			<h5><?php echo strtoupper(afficherLibelle('compte')) ?></h6>
+			<a href="#"><?php echo strtoupper(afficherLibelle('votre')).' '.strtoupper(afficherLibelle('compte')) ?></a>
+			<a href="#"><?php echo strtoupper(afficherLibelle('infosPersonnelles')) ?></a> 
+			<a href="#"><?php echo strtoupper(afficherLibelle('adresses')) ?></a> 
+			<a href="#"><?php echo strtoupper(afficherLibelle('reduction')) ?></a>  
+			<a href="#"><?php echo strtoupper(afficherLibelle('histoCommande')) ?></a>
 		 </div>
 		<div class="span3">
 			<h5>INFORMATION</h5>
-			<a href="bootsshop/contact.html">CONTACT</a>  
-			<a href="bootsshop/register.html">REGISTRATION</a>  
-			<a href="bootsshop/legal_notice.html">LEGAL NOTICE</a>  
-			<a href="bootsshop/tac.html">TERMS AND CONDITIONS</a> 
+			<a href="contact_page.php">CONTACT</a>  
+			<a href="register_page.php"><?php echo strtoupper(afficherLibelle('enregistrement')) ?></a>  
+			<a href="mentions_legales_page.php"><?php echo strtoupper(afficherLibelle('mentionLegale')) ?></a>  
+			<a href="delivery_page.php"><?php echo strtoupper(afficherLibelle('termesEtConditions')) ?></a> 
 			<a href="bootsshop/faq.html">FAQ</a>
 		 </div>
 		<div class="span3">
-			<h5>OUR OFFERS</h5>
-			<a href="#">NEW PRODUCTS</a> 
-			<a href="#">TOP SELLERS</a>  
-			<a href="bootsshop/special_offer.html">SPECIAL OFFERS</a>  
-			<a href="#">MANUFACTURERS</a> 
-			<a href="#">SUPPLIERS</a> 
+			<h5><?php echo strtoupper(afficherLibelle('nosOffres')) ?></h5>
+			<a href="#"><?php echo strtoupper(afficherLibelle('nouveauxProduits')) ?></a> 
+			<a href="#"><?php echo strtoupper(afficherLibelle('topVentes')) ?></a>  
+			<a href="special_offer_page.php"><?php echo strtoupper(afficherLibelle('offresSpeciales')) ?></a>  
+			<a href="#"><?php echo strtoupper(afficherLibelle('fabricants')) ?></a> 
+			<a href="#"><?php echo strtoupper(afficherLibelle('fournisseurs')) ?></a> 
 		 </div>
 		<div id="socialMedia" class="span3 pull-right">
-			<h5>SOCIAL MEDIA </h5>
+			<h5><?php echo strtoupper(afficherLibelle('mediaSocial')) ?></h5>
 			<a href="#"><img width="60" src="bootsshop/assets/img/facebook.png" title="facebook"/></a>
 			<a href="#"><img width="60" src="bootsshop/assets/img/twitter.png" title="twitter"/></a>
 			<a href="#"><img width="60" src="bootsshop/assets/img/rss.png" title="rss"/></a>
@@ -35,7 +35,7 @@
 		 </div> 
 	 </div>
 	 <hr class="soft">
-	<p class="pull-right">&copy; Boot'sshop</p>
+	<p class="pull-right">&copy; Indochine4Ever</p>
 </div><!-- /container -->
 
 
