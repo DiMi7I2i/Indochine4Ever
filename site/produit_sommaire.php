@@ -36,6 +36,7 @@
 	  </tbody>
 	</table>		
 			
+	<?php creationTableauPanier();?>
 	<table class="table table-bordered">
               <thead>
                 <tr>
@@ -101,22 +102,6 @@
                 </tr>
 				</tbody>
             </table>
-		
-		
-            <table class="table table-bordered">
-			<tbody>
-				 <tr>
-                  <td> 
-				<form class="form-inline">
-				<label style="min-width:159px"><strong> VOUCHERS CODE:</strong> </label> 
-				<input type="text" class="input-medium" placeholder="CODE">
-				<button type="submit" class="btn"> ADD</button>
-				</form>
-				</td>
-                </tr>
-				
-			</tbody>
-			</table>
 			
 			<table class="table table-bordered">
 			<tbody>
