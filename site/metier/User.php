@@ -1,5 +1,5 @@
 <?php
-class user {
+class User {
 	
 	//Variables
 	//====================================================
@@ -17,6 +17,20 @@ class user {
 	public $userAddress;
 	public $userAddress2;
 	
-	
+ function User($edible="toto", $color="green") 
+   {
+       $this->userId = $edible;
+       $this->userEmail = $color;
+   }
+
+   function getUserId() 
+   {
+       return $this->userId;
+   }
+
+   function getMail() 
+   {
+       return $this->userEmail;
+   }
 }
 ?>

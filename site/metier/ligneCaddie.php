@@ -2,7 +2,7 @@
 class ligneCaddie {
 	//Variables
 	//====================================================
-	public $quantite;
+	public $quantite; //quantite du produit
 	public $produit; //objet produti
 }
 
