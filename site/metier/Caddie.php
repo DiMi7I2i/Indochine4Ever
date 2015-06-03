@@ -16,8 +16,15 @@ class Caddie {
 	function getListeLigne() {
 		return $this->listeLigne;
 	}
+	function setListeLigne($listeLigne) {
+		return $this->$listeLigne;
+	}
+	
 	function getPrixTotal() {
 		return $this->prixTotal;
+	}
+	function setPrixTotal($prixCalcule) {
+		return $this->prixTotal=$prixCalcule;
 	}
 }
 ?>

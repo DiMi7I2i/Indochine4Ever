@@ -16,8 +16,16 @@ class LigneCaddie {
 		return $this->produit;
 	}
 	
+	function setProduit($produit){
+		return $this->produit=$produit;
+	}
+	
 	function getQuantite(){
 		return $this->quantite;
+	}
+	
+	function setQuantite($quantite){
+		return $this->quantite=$quantite;
 	}
 }
 

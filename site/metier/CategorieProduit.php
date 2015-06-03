@@ -13,6 +13,7 @@ class CategorieProduit {
 	}
 	
 	//GETTER SETTER
+	//SETTER on ne modifie pas cet objet
 	function getCategorieId() {
 		return $this->categorieId;
 	}
