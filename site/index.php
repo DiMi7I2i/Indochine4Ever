@@ -8,4 +8,4 @@ include 'carroussel.php';
 include 'produits.php';
 // Inclusion du footer
 include 'footer.php';
-?>
+?>	
