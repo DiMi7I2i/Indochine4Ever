@@ -38,32 +38,64 @@ class Produit {
 		return $this->productName;
 	}
 	
+	function setNomProduit($nomProduit){
+		return $this->productName=$nomProduit;
+	}
+	
 	function getPrixProduit(){
 		return $this->productPrice;
 	}
 	
+	function setPrixProduit($prixProduit){
+		return $this->productPrice=$prixProduit;
+	}
+	
 	function getPoidsProduit(){
-		return $this>productWeight;
+		return $this->productWeight;
+	}
+	
+	function setPoidsProduit($poidsProduit){
+		return $this->productWeight=$poidsProduit;
 	}
 	
 	function getDescriptionCaddie(){
 		return $this->productCartDesc;
 	}
 	
+	function setDescriptionCaddie($descriptionCaddie){
+		return $this->productCartDesc=$descriptionCaddie;
+	}
+	
 	function getDescriptionCourte(){
 		return $this->productShortDesc;
+	}
+	
+	function setDescriptionCourte($descriptionCourtes){
+		return $this->productShortDesc=$descriptionCourtes;
 	}
 	
 	function getImageProduit(){
 		return $this->productImage;
 	}
 	
+	function setImageProduit($imageUrl){
+		return $this->productImage=$imageUrl;
+	}
+	
 	function getProductCategoryID(){
 		return $this->productCategoryID;
 	}
 	
+	function setProductCategoryID($produitCategorieID){
+		return $this->productCategoryID=$produitCategorieID;
+	}
+	
 	function getStatusProduit(){
 		return $this->productLive;
+	}
+	
+	function setStatusProduit($statusProduit){
+		return $this->productLive=$statusProduit;
 	}
 }
 

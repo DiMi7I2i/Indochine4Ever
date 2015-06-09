@@ -122,5 +122,4 @@ function initLangue(){
 		$_SESSION['langue'] = 'en';
 	}
 }
-
 ?>
