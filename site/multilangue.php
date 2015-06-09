@@ -17,6 +17,7 @@ $fr = array(
 	// Catalog page
 	'produitsSontDispo' 	=> 'produits sont disponibles',
 	'trierPar'				=> 'Trier par',
+	'nouveauxProduits'		=> 'Nouveaux produits',	
 	'nomDuProduitA_Z'		=> 'Nom du produit A - Z',
 	'nomDuProduitZ_A'		=> 'Nom du produit Z - A',
 	'produitEnStock'		=> 'Produit en stock',
@@ -81,6 +82,7 @@ $fr = array(
 	'indicationTelFixe'		=> 'Vous devez enregistrer au moins un numéro',
 	'telMobile'				=> 'Téléphone mobile',
 	'champsObligatoires'	=> 'Champs obligatoires',
+	'enregistrement'		=> 'Enregistrement',	
 
 	// Footer
 	'compte'				=> 'Compte',
@@ -143,6 +145,7 @@ $en = array(
 	// Catalog page
 	'produitsSontDispo' 	=> 'products are available',
 	'trierPar'				=> 'Sort By',
+	'nouveauxProduits'		=> 'New products',	
 	'nomDuProduitA_Z'		=> 'Product name A - Z',
 	'nomDuProduitZ_A'		=> 'Product name Z - A',
 	'produitEnStock'		=> 'Product stock',
@@ -207,6 +210,8 @@ $en = array(
 	'indicationTelFixe'		=> 'You must register at least one phone number',
 	'telMobile'				=> 'Mobile Phone',
 	'champsObligatoires'	=> 'Required field',
+	'enregistrement'		=> 'Register',
+		
 	
 	// Footer
 	'compte'				=> 'Account',

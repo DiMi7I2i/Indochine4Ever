@@ -51,7 +51,7 @@
 		<div class="control-group">
 		<label class="control-label" for="dob"><?php echo afficherLibelle('dateNaissance') ?>&nbsp;<sup style="color:red;">*</sup></label>
 		<div class="controls">
-			<input id="datepicker" type="date" name="naissance" required="required">
+			<input id="datepicker" type="date" name="naissance" placeholder="dd/mm/yyyy" required="required">
 		</div>
 	  </div>
 
@@ -145,7 +145,7 @@
 			<div class="controls">
 				<input type="hidden" name="email_create" value="1">
 				<input type="hidden" name="is_new_customer" value="1">
-				<input class="btn btn-large" type="submit" value="Register" />
+				<input class="btn btn-large" type="submit" value="<?php echo afficherLibelle('enregistrement') ?>" />
 			</div>
 		</div>		
 	</form>
@@ -154,7 +154,7 @@
 </div>
 </div>
 <script>
-$(function() {
+$(document).ready(function(){
 	$( "#datepicker" ).datepicker();
 });
 

@@ -11,6 +11,7 @@
 		<div class="control-group">
 		  <label class="control-label alignL"><?php echo afficherLibelle('trierPar') ?></label>
 			<select>
+              <option><?php echo afficherLibelle('nouveauxProduits') ?></option>
               <option><?php echo afficherLibelle('nomDuProduitA_Z') ?></option>
               <option><?php echo afficherLibelle('nomDuProduitZ_A') ?></option>
               <option><?php echo afficherLibelle('produitEnStock') ?></option>
@@ -28,8 +29,6 @@
 
 	<hr class="soft"/>
 	</div>
-</div>
-<a href="bootsshop/compair.html" class="btn btn-large pull-right">Compair Product</a>
 	<div class="pagination">
 		<ul>
 		<li><a href="#">&lsaquo;</a></li>
@@ -41,6 +40,7 @@
 		<li><a href="#">&rsaquo;</a></li>
 		</ul>
 	</div>
+</div>
 <br class="clr"/>
 </div>
 </div>
