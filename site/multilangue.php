@@ -20,7 +20,7 @@ $fr = array(
 	'nouveauxProduits'		=> 'Nouveaux produits',	
 	'nomDuProduitA_Z'		=> 'Nom du produit A - Z',
 	'nomDuProduitZ_A'		=> 'Nom du produit Z - A',
-	'produitEnStock'		=> 'Produit en stock',
+	'produitsEnStock'		=> 'Produits en stock',
 	'prixLePlusBas'			=> 'Prix le plus bas',			
 	
 	// Delivry page
@@ -148,7 +148,7 @@ $en = array(
 	'nouveauxProduits'		=> 'New products',	
 	'nomDuProduitA_Z'		=> 'Product name A - Z',
 	'nomDuProduitZ_A'		=> 'Product name Z - A',
-	'produitEnStock'		=> 'Product stock',
+	'produitsEnStock'		=> 'Product stock',
 	'prixLePlusBas'			=> 'Price Lowest first',		
 		
 	// Delivry page

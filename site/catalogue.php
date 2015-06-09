@@ -14,7 +14,7 @@
               <option><?php echo afficherLibelle('nouveauxProduits') ?></option>
               <option><?php echo afficherLibelle('nomDuProduitA_Z') ?></option>
               <option><?php echo afficherLibelle('nomDuProduitZ_A') ?></option>
-              <option><?php echo afficherLibelle('produitEnStock') ?></option>
+              <option><?php echo afficherLibelle('produitsEnStock') ?></option>
               <option><?php echo afficherLibelle('prixLePlusBas') ?></option>
             </select>
 		</div>
