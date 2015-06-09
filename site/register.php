@@ -1,6 +1,4 @@
-<div id="mainBody" class="container">
-<!-- ==================================================Header End====================================================================== -->
-	<?php include 'sidebar.php' ?>
+<?php include 'sidebar.php' ?>
 
 	<div class="span9">
     	<ul class="breadcrumb">
@@ -53,36 +51,7 @@
 		<div class="control-group">
 		<label class="control-label" for="dob"><?php echo afficherLibelle('dateNaissance') ?>&nbsp;<sup style="color:red;">*</sup></label>
 		<div class="controls">
-		  <select class="span1" name="jour" required="required">
-				<option value="">-</option>
-					<option value="1">1&nbsp;&nbsp;</option>
-					<option value="2">2&nbsp;&nbsp;</option>
-					<option value="3">3&nbsp;&nbsp;</option>
-					<option value="4">4&nbsp;&nbsp;</option>
-					<option value="5">5&nbsp;&nbsp;</option>
-					<option value="6">6&nbsp;&nbsp;</option>
-					<option value="7">7&nbsp;&nbsp;</option>
-			</select>
-			<select class="span1" name="mois" required="required">
-				<option value="">-</option>
-					<option value="1">1&nbsp;&nbsp;</option>
-					<option value="2">2&nbsp;&nbsp;</option>
-					<option value="3">3&nbsp;&nbsp;</option>
-					<option value="4">4&nbsp;&nbsp;</option>
-					<option value="5">5&nbsp;&nbsp;</option>
-					<option value="6">6&nbsp;&nbsp;</option>
-					<option value="7">7&nbsp;&nbsp;</option>
-			</select>
-			<select class="span1" name="annee" required="required">
-				<option value="">-</option>
-					<option value="1">1&nbsp;&nbsp;</option>
-					<option value="2">2&nbsp;&nbsp;</option>
-					<option value="3">3&nbsp;&nbsp;</option>
-					<option value="4">4&nbsp;&nbsp;</option>
-					<option value="5">5&nbsp;&nbsp;</option>
-					<option value="6">6&nbsp;&nbsp;</option>
-					<option value="7">7&nbsp;&nbsp;</option>
-			</select>
+			<input id="datepicker" type="date" name="naissance" required="required">
 		</div>
 	  </div>
 
@@ -172,7 +141,7 @@
 			</div>
 		</div>
 			
-	<div class="control-group">
+		<div class="control-group">
 			<div class="controls">
 				<input type="hidden" name="email_create" value="1">
 				<input type="hidden" name="is_new_customer" value="1">
@@ -184,3 +153,9 @@
 
 </div>
 </div>
+<script>
+$(function() {
+	$( "#datepicker" ).datepicker();
+});
+
+</script>

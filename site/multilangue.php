@@ -5,6 +5,7 @@ $fr = array(
 	'accueil' 				=> 'Accueil',
 	'contact' 				=> 'Contact',
 	'bouton_special_offer' 	=> 'Offre spéciale',
+	'catalogue'				=> 'Catalogue',	
 	'compte' 				=> 'Mon compte',
 	'detail' 				=> 'Détail',
 	'livraison' 			=> 'Livraison',
@@ -12,6 +13,14 @@ $fr = array(
 
 	// Index page
 	'nouveauxProduits'		=> 'Nouveaux produits',
+		
+	// Catalog page
+	'produitsSontDispo' 	=> 'produits sont disponibles',
+	'trierPar'				=> 'Trier par',
+	'nomDuProduitA_Z'		=> 'Nom du produit A - Z',
+	'nomDuProduitZ_A'		=> 'Nom du produit Z - A',
+	'produitEnStock'		=> 'Produit en stock',
+	'prixLePlusBas'			=> 'Prix le plus bas',			
 	
 	// Delivry page
 	'conditionsEtFraisLiv'	=> 'Conditions et frais de livraison',
@@ -121,6 +130,7 @@ $en = array(
 	// Header
 	'accueil' 				=> 'Home',
 	'contact' 				=> 'Contact',
+	'catalogue'				=> 'Catalog',	
 	'bouton_special_offer' 	=> 'Special Offer',
 	'compte' 				=> 'Account',
 	'detail' 				=> 'Détail',
@@ -129,6 +139,14 @@ $en = array(
 
 	// Index page
 	'nouveauxProduits'		=> 'New products',
+		
+	// Catalog page
+	'produitsSontDispo' 	=> 'products are available',
+	'trierPar'				=> 'Sort By',
+	'nomDuProduitA_Z'		=> 'Product name A - Z',
+	'nomDuProduitZ_A'		=> 'Product name Z - A',
+	'produitEnStock'		=> 'Product stock',
+	'prixLePlusBas'			=> 'Price Lowest first',		
 		
 	// Delivry page
 	'conditionsEtFraisLiv'	=> 'Conditions and shipping costs',
