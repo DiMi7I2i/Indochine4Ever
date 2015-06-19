@@ -20,7 +20,7 @@
 		 </div>
 		<div class="span3">
 			<h5><?php echo strtoupper(afficherLibelle('nosOffres')) ?></h5>
-			<a href="#"><?php echo strtoupper(afficherLibelle('nouveauxProduits')) ?></a> 
+			<a href="catalogue_page.php"><?php echo strtoupper(afficherLibelle('nouveauxProduits')) ?></a> 
 			<a href="#"><?php echo strtoupper(afficherLibelle('topVentes')) ?></a>  
 			<a href="special_offer_page.php"><?php echo strtoupper(afficherLibelle('offresSpeciales')) ?></a>  
 			<a href="#"><?php echo strtoupper(afficherLibelle('fabricants')) ?></a> 
