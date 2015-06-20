@@ -6,7 +6,7 @@ class LigneCaddie {
 	public $produit; //objet produti
 	
 	//constructeur
-	function LigneCaddie($produit= new Produit(),$quantite=1){
+	function LigneCaddie($produit,$quantite=1){
 		$this->produit=$produit;
 		$this->quantite=$quantite;
 	}

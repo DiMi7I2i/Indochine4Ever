@@ -122,4 +122,12 @@ function initLangue(){
 		$_SESSION['langue'] = 'en';
 	}
 }
+
+function initCaddie(){
+	if (!isset($_SESSION['caddie'])){
+		$caddie = serialize(new Caddie(array()));
+		//print_r($caddie);
+		$_SESSION['caddie']=$caddie;
+	}
+}
 ?>

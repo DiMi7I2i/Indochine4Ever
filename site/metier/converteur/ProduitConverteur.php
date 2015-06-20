@@ -1,28 +1,27 @@
 <?php
 function fetchProduit($idProduit,$conn){
-	$requete = "SELECT * FROM products WHERE ProductID = '%$idProduit%'";
+	$requete = "SELECT * FROM products WHERE ProductID = '$idProduit'";
 	try{
 		$resultat = mysql_query($requete,$conn);
-		while ($produit = mysql_fetch_array($produitBase)) {
-			produitDatabaseToProduitObject($produit);
-		}
+		$produit = mysql_fetch_array($resultat);
+		$produit=produitDatabaseToProduitObject($produit);
 	}catch (Exception $e){
-		return false;
+		return null;
 	}
-	return true;
+	return $produit;
 }
 
 function produitDatabaseToProduitObject($produit){
 	$produitRetour= new Produit();
-	
-	$produitRetour.setNomProduit($produit['ProductName']);
-	$produitRetour.setPrixProduit($produit['ProductPrice']);
-	$produitRetour.setPoidsProduit($produit['ProductWeight']);
-	$produitRetour.setDescriptionCaddie($produit['ProductCartDesc']);
-	$produitRetour.setDescriptionCourte($produit['ProductShortDesc']);
-	$produitRetour.setImageProduit($produit['ProductImage']);
-	$produitRetour.setProductCategoryID($produit['ProductCategoryID']);
-	$produitRetour.setStatusProduit($produit['ProductLive']);
+	$produitRetour->setIdProduit($produit['ProductID']);
+	$produitRetour->setNomProduit($produit['ProductName']);
+	$produitRetour->setPrixProduit($produit['ProductPrice']);
+	$produitRetour->setPoidsProduit($produit['ProductWeight']);
+	$produitRetour->setDescriptionCaddie($produit['ProductCartDesc']);
+	$produitRetour->setDescriptionCourte($produit['ProductShortDesc']);
+	$produitRetour->setImageProduit($produit['ProductImage']);
+	$produitRetour->setProductCategoryID($produit['ProductCategoryID']);
+	$produitRetour->setStatusProduit($produit['ProductLive']);
 	
 	return $produitRetour;
 }

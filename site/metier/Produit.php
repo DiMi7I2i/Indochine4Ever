@@ -22,6 +22,7 @@ class Produit {
 	
 	//constructeur
 	function Produit(){
+		$this->productId="";
 		$this->productName="";
 		$this->productPrice="";
 		$this->productWeight="";
@@ -34,6 +35,15 @@ class Produit {
 	
 	
 	//GETTER SETTER
+	function getIdProduit(){
+		return $this->productId;
+	}
+	
+	function setIdProduit($IdProduit){
+		return $this->productId=$IdProduit;
+	}
+	
+	
 	function getNomProduit(){
 		return $this->productName;
 	}

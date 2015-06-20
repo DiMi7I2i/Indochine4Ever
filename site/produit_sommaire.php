@@ -36,7 +36,12 @@
 	  </tbody>
 	</table>		
 			
-	<?php creationTableauPanier();?>
+	<?php
+	$caddie=$_SESSION['caddie'];
+	$caddie=unserialize($caddie);
+	$listeLigne=$caddie->getListeLigne();
+	creationTableauPanier($listeLigne);
+	?>
 	<table class="table table-bordered">
               <thead>
                 <tr>

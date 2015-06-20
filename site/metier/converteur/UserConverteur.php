@@ -1,6 +1,6 @@
 <?php
 function fetchUser($idUser,$conn){
-	$requete = "SELECT * FROM users WHERE ProductID = '%$idProduit%'";
+	$requete = "SELECT * FROM users WHERE ProductID = '$idUser'";
 	try{
 		$resultat = mysql_query($requete,$conn);
 		while ($user = mysql_fetch_array($produitBase)) {

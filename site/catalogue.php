@@ -1,4 +1,31 @@
-<?php include 'sidebar.php' ?>
+<?php 
+
+//include 'sidebar.php';
+		 
+$productID = isset($_GET['id_produit']) ? $_GET['id_produit'] : "";
+if($productID !=""){
+	$produit=fetchProduit($productID,$conn);
+	$ligneCaddie= new LigneCaddie($produit,1);
+	//dans la liste du caddie de session on ajout une ligne caddie contenant un produit
+	$caddie= $_SESSION['caddie'];
+	$caddie=unserialize($caddie);
+	//recuperation liste de ligne du caddie
+	$arrayCaddie= $caddie->getListeLigne();
+	//ajout du produit courant
+	array_push($arrayCaddie,$ligneCaddie);
+	//on set la liste dans le caddie
+	$caddie->setListeLigne($arrayCaddie);
+	$caddieSession=serialize($caddie);
+	$_SESSION['caddie']=$caddieSession;
+	$toto=$_SESSION['caddie'];
+	$toto=unserialize($toto);
+	print_r($toto);
+	
+	
+}
+		
+		
+?>
 
 	<div class="span9">
     <ul class="breadcrumb">

@@ -2,12 +2,7 @@
 
 $productID = isset($_GET['id_produit']) ? $_GET['id_produit'] : "";
 
-if ($productID > 0){
-       $detailProduit = listeDetailProduit($conn,$productID);
-    if ($detailProduit <> 0){
-        echo 'Prix: '.$detailProduit['ProductPrice'];
-    }
-}
+$produit=fetchProduit($productID,$conn);
 
 
 ?>
@@ -61,18 +56,20 @@ if ($productID > 0){
 </div>
 </div>
 <div class="span6">
-<h3>Fujifilm FinePix S2950 Digital Camera  </h3>
+<h3><?php $produit->getNomProduit();?>  </h3>
 <small>- (14MP, 18x Optical Zoom) 3-inch LCD</small>
 <hr class="soft"/>
-<form class="form-horizontal qtyFrm">
+<form class="form-horizontal qtyFrm" action="catalogue_page.php" method="get">
  <div class="control-group">
 <label class="control-label"><span>
     <?php
-    	echo '<span>'.formatDevise($detailProduit['ProductPrice']).'</span>'
+    	echo '<span>'.$produit->getPrixProduit().'</span>';
+    	echo '<span>'.$produit->getNomProduit().'</span>';
     ?>
 </span></label>
 <div class="controls">
 <input type="number" class="span1" placeholder="Qty."/>
+<input type="hidden" name="id_produit" value="<?php echo $produit->getIdProduit(); ?>">
  <button type="submit" class="btn btn-large pull-right"><i class=" icon-shopping-cart"></i> Add to cart</button>
 </div>
  </div>

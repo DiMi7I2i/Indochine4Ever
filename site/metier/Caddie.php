@@ -7,9 +7,9 @@ class Caddie {
 	public $prixTotal; // prix total du caddie à setter à chaque ajout de produit
 	
 	//constructeur
-	function Caddie($listeLigne = array(), $prixTotal = 0) {
-		$this->$listeLigne;
-		$this->$prixTotal;
+	function Caddie($listeLigne, $prixTotal = 0) {
+		$this->listeLigne= $listeLigne;
+		$this->prixTotal= $prixTotal;
 	}
 	
 	//GETTER SETTER
@@ -17,7 +17,7 @@ class Caddie {
 		return $this->listeLigne;
 	}
 	function setListeLigne($listeLigne) {
-		return $this->$listeLigne;
+		return $this->listeLigne=$listeLigne;
 	}
 	
 	function getPrixTotal() {

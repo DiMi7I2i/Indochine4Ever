@@ -1,6 +1,9 @@
 <?php
 include 'ini.php';
+<<<<<<< Updated upstream
+=======
 include 'metier/fonction/FonctionProduit.php';
+>>>>>>> Stashed changes
 include 'header.php';
 include 'catalogue.php';
 include 'footer.php';

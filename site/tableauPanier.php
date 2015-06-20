@@ -1,9 +1,9 @@
 <?php 
 
-function creationTableauPanier(){
+function creationTableauPanier($caddie){
 	echo "<table class=\"table table-bordered\">";
 	creationEnteteTableauPanier();
-	creationCorpTableauPanier();
+	creationCorpTableauPanier($caddie);
 	echo "</table>";
 }
 
@@ -42,12 +42,13 @@ function creationColonneQuantitePanier(){
 	echo "</div>";
 }
 
-function creationContenuColonnePanier(){
+function creationContenuColonnePanier($ligne){
+	$produit=$ligne->getProduit();
 	echo "<td>";
 	echo "image produit";
 	echo "</td>";
 	echo "<td>";
-	echo "description produit description produit";
+	echo "".$produit->getDescriptionCaddie();
 	echo "</td>";
 	echo "<td>";
 	echo "quantite produit";
@@ -56,10 +57,10 @@ function creationContenuColonnePanier(){
 	creationColonneQuantitePanier();
 	echo "</td>";
 	echo "<td>";
-	echo "$120.00";
+	echo "".$produit->getPrixProduit();
 	echo "</td>";
 	echo "<td>";
-	echo "$120.00";
+	echo "test";
 	echo "</td>";
 	echo "<td>";
 	echo "$120.00";
@@ -98,13 +99,14 @@ function creationTotalCorpTableauPanier(){
 	echo "</tr>";
 }
 
-function creationCorpTableauPanier(){
+function creationCorpTableauPanier($ligneCaddie){
 	echo "<tbody>";
-	$tableau= array('bar' => 'baz','fezfz' => 'baz','bfezfzfzar' => 'baz'); 
-	
-	for($i=0;$i<count($tableau);$i++){
+	//liste des lignes du caddie en parametre
+	$nbLigne=count($ligneCaddie);
+	print_r($nbLigne);
+	for($i=0;$i<$nbLigne;$i++){
 		echo "<tr>";
-		creationContenuColonnePanier();
+		creationContenuColonnePanier($ligneCaddie[$i]);
 		echo "</tr>";
 	}
 	creationTotalCorpTableauPanier();
