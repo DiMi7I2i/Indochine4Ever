@@ -22,9 +22,6 @@ function creationEnteteTableauPanier(){
 	echo afficherLibelle('prix');
 	echo "</td>";
 	echo "<td>";
-	echo afficherLibelle('reduction');
-	echo "</td>";
-	echo "<td>";
 	echo afficherLibelle('taxe');
 	echo "</td>";
 	echo "<td>";
@@ -43,73 +40,62 @@ function creationColonneQuantitePanier(){
 }
 
 function creationContenuColonnePanier($ligne){
+	//produit
 	$produit=$ligne->getProduit();
+	//quantite du produit dans la ligne
+	$quantite=$ligne->getQuantite();
+	//prix du produit
+	$prix = $produit->getPrixProduit();
 	echo "<td>";
-	echo "image produit";
+	echo $produit->getImageProduit();
 	echo "</td>";
 	echo "<td>";
-	echo "".$produit->getDescriptionCaddie();
-	echo "</td>";
-	echo "<td>";
-	echo "quantite produit";
+	echo $produit->getDescriptionCaddie();
 	echo "</td>";
 	echo "<td>";
 	creationColonneQuantitePanier();
 	echo "</td>";
 	echo "<td>";
-	echo "".$produit->getPrixProduit();
+	echo "".$prix;
 	echo "</td>";
 	echo "<td>";
-	echo "test";
+	echo round(calculPrixTVA($prix),2,PHP_ROUND_HALF_UP);
 	echo "</td>";
 	echo "<td>";
-	echo "$120.00";
+	echo "".$prix;
 	echo "</td>";
 }
 
-function creationTotalCorpTableauPanier(){
+function creationTotalCorpTableauPanier($caddie){
 	echo "<tr>";
-	echo "<td align=\"right\" colspan=\"6\">";
-	echo afficherLibelle('prixTotal');
-	echo "</td>";
-	echo "<td>";
-	echo "</td>";
-	echo "</tr>";
-	echo "<tr>";
-	echo "<td align=\"right\" colspan=\"6\">";
-	echo afficherLibelle('prixReduction');
-	echo "</td>";
-	echo "<td>";
-	echo "</td>";
-	echo "</tr>";
-	echo "<tr>";
-	echo "<td align=\"right\" colspan=\"6\">";
+	echo "<td align=\"right\" colspan=\"5\">";
 	echo afficherLibelle('prixTax');
 	echo "</td>";
 	echo "<td>";
+	echo calculTaxePrix($caddie);
 	echo "</td>";
 	echo "</tr>";
 	echo "<tr>";
-	echo "<td align=\"right\" colspan=\"6\">";
-	echo afficherLibelle('prixTotalTTC');
+	echo "<td align=\"right\" colspan=\"5\">";
+	echo afficherLibelle('prixTotal');
 	echo "</td>";
 	echo "<td class=\"label label-important\">";
-	echo "<strong>"."155RP"."</strong>";
+	echo "<strong>".calculTotalPrix($caddie)."</strong>";
 	echo "</td>";
 	echo "</tr>";
 }
 
-function creationCorpTableauPanier($ligneCaddie){
+function creationCorpTableauPanier($caddie){
 	echo "<tbody>";
 	//liste des lignes du caddie en parametre
+	$ligneCaddie=$caddie->getListeLigne();
 	$nbLigne=count($ligneCaddie);
-	print_r($nbLigne);
 	for($i=0;$i<$nbLigne;$i++){
 		echo "<tr>";
 		creationContenuColonnePanier($ligneCaddie[$i]);
 		echo "</tr>";
 	}
-	creationTotalCorpTableauPanier();
+	creationTotalCorpTableauPanier($caddie);
 	echo "</tbody>";
 }
 

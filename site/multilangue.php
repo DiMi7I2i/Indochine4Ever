@@ -124,7 +124,19 @@ $fr = array(
 	// Legal notice
 	'raisonSociale'			=> 'Raison sociale',
 	'siegeSocial'			=> 'Siège social',
-	'auteursDuSite'			=> 'Auteurs du site'		
+	'auteursDuSite'			=> 'Auteurs du site',	
+
+	//Panier
+	'produit'				=> 'Produit',
+	'description'			=> 'Description',
+	'quantite'				=> 'Quantité',
+	'prix'					=> 'Prix',
+	'taxe'					=> 'TVA',
+	'total'					=> 'Total',
+	'prixTotal'				=> 'Prix Total (TTC)',
+	'prixTax'				=> 'Prix HT',
+	'prixTotalTTC'			=> 'Prix TTC',
+	'element'				=> 'Element(s)'
 		
 );
 
@@ -253,7 +265,20 @@ $en = array(
 	// Legal notice
 	'raisonSociale'			=> 'Social reason',
 	'siegeSocial'			=> 'Headquarters',
-	'auteursDuSite'			=> 'Site Authors'
+	'auteursDuSite'			=> 'Site Authors',
+		
+	//Panier
+	'produit'				=> 'Product',
+	'description'			=> 'Description',
+	'quantite'				=> 'Quantity',
+	'prix'					=> 'Price',
+	'taxe'					=> 'Tax',
+	'total'					=> 'Total',
+	'prixTotal'				=> 'Total Price',
+	'prixTax'				=> 'Exclusive of Taxes',
+	'prixTotalTTC'			=> 'Total',
+	'element'				=> 'Item(s)'
+		
 		
 );
 

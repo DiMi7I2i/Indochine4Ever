@@ -1,4 +1,5 @@
 <?php
+// Récupération d'un produit en fonction de son ID
 function fetchProduit($idProduit,$conn){
 	$requete = "SELECT * FROM products WHERE ProductID = '$idProduit'";
 	try{

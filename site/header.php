@@ -102,8 +102,27 @@ if (isset ($_GET['lang'])){
 		<a href="?lang=fr"> <img src="bootsshop/assets/img/fr_drapeau.png" alt="Langue FR" /></a>
 		<a href="?lang=en"><img src="bootsshop/assets/img/en_drapeau.png"  alt="Langue EN" /></a>
 	
-	<a href="produit_sommaire_page.php"> <span class="btn btn-mini btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
-	<a href="produit_sommaire_page.php"><span class="btn btn-mini active">$155.00</span></a>
+	
+	<a href="produit_sommaire_page.php"> 
+		<span class="btn btn-mini btn-warning"> 
+			<i class="icon-shopping-cart icon-white"></i> 
+			[ 
+			<?php $caddie=$_SESSION['caddie'];
+			$caddie=unserialize($caddie);
+			echo nbElementPanier($caddie)
+			?> ] 
+		</span> 
+	</a>
+	<a href="produit_sommaire_page.php">
+		<span class="btn btn-mini active">
+			<?php $caddie=$_SESSION['caddie'];
+			$caddie=unserialize($caddie);
+			echo calculTotalPrix($caddie)
+			?> 		
+		</span>
+	</a>
+	<span class="btn btn-mini">&pound;</span>
+	<span class="btn btn-mini">&euro;</span> 
 	<span class="btn btn-mini">&pound;</span>
 	<span class="btn btn-mini">&euro;</span> 
 </div>

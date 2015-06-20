@@ -11,7 +11,7 @@ class Produit {
 	public $productCartDesc; //description pour le caddie du produit
 	public $productShortDesc; //description courte du produit
 	public $productLongDesc; //description longue du produit
-	public $productThumb; //
+	public $productThumb; //vignette du produit
 	public $productImage; //image du produit
 	public $productCategoryID; //id de la categorie du prix
 	public $productStock; //stock du produit
@@ -25,6 +25,7 @@ class Produit {
 		$this->productId="";
 		$this->productName="";
 		$this->productPrice="";
+		$this->productThumb="";
 		$this->productWeight="";
 		$this->productCartDesc="";
 		$this->productShortDesc="";
@@ -58,6 +59,14 @@ class Produit {
 	
 	function setPrixProduit($prixProduit){
 		return $this->productPrice=$prixProduit;
+	}
+	
+	function getVignetteProduit(){
+		return $this->productThumb;
+	}
+	
+	function setVignetteProduit($vignetteProduit){
+		return $this->productThumb=$vignetteProduit;
 	}
 	
 	function getPoidsProduit(){
