@@ -1,7 +1,7 @@
 <!-- Footer ------------------------------------------------------ -->
-<hr class="soft">
 <div  id="footerSection">
 	<div class="row">
+		<hr class="soft">
 		<div class="span3">
 			<h5><?php echo strtoupper(afficherLibelle('compte')) ?></h6>
 			<a href="#"><?php echo strtoupper(afficherLibelle('votre')).' '.strtoupper(afficherLibelle('compte')) ?></a>
@@ -16,22 +16,22 @@
 			<a href="register_page.php"><?php echo strtoupper(afficherLibelle('enregistrement')) ?></a>  
 			<a href="mentions_legales_page.php"><?php echo strtoupper(afficherLibelle('mentionLegale')) ?></a>  
 			<a href="delivery_page.php"><?php echo strtoupper(afficherLibelle('termesEtConditions')) ?></a> 
-			<a href="bootsshop/faq.html">FAQ</a>
+			<a href="faq_page.php">FAQ</a>
 		 </div>
 		<div class="span3">
 			<h5><?php echo strtoupper(afficherLibelle('nosOffres')) ?></h5>
 			<a href="catalogue_page.php"><?php echo strtoupper(afficherLibelle('nouveauxProduits')) ?></a> 
 			<a href="#"><?php echo strtoupper(afficherLibelle('topVentes')) ?></a>  
-			<a href="special_offer_page.php"><?php echo strtoupper(afficherLibelle('offresSpeciales')) ?></a>  
+			<a href="catalogue_page.php"><?php echo strtoupper(afficherLibelle('offresSpeciales')) ?></a>  
 			<a href="#"><?php echo strtoupper(afficherLibelle('fabricants')) ?></a> 
 			<a href="#"><?php echo strtoupper(afficherLibelle('fournisseurs')) ?></a> 
 		 </div>
 		<div id="socialMedia" class="span3 pull-right">
 			<h5><?php echo strtoupper(afficherLibelle('mediaSocial')) ?></h5>
-			<a href="#"><img width="60" src="bootsshop/assets/img/facebook.png" title="facebook"/></a>
-			<a href="#"><img width="60" src="bootsshop/assets/img/twitter.png" title="twitter"/></a>
-			<a href="#"><img width="60" src="bootsshop/assets/img/rss.png" title="rss"/></a>
-			<a href="#"><img width="60" src="bootsshop/assets/img/youtube.png" title="youtube"/></a>
+			<a href="https://www.facebook.com/Indochineofficiel?fref=ts"><img width="60" src="bootsshop/assets/img/facebook.png" title="facebook"/></a>
+			<a href="https://twitter.com/indochinetwitt"><img width="60" src="bootsshop/assets/img/twitter.png" title="twitter"/></a>
+			<a href="http://www.melty.fr/indochine-w-552.rss"><img width="60" src="bootsshop/assets/img/rss.png" title="rss"/></a>
+			<a href="https://www.youtube.com/watch?v=kKAI6gp7jIc"><img width="60" src="bootsshop/assets/img/youtube.png" title="youtube"/></a>
 		 </div> 
 	 </div>
 	 <hr class="soft">

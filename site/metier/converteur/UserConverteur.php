@@ -1,18 +1,20 @@
 <?php
-
+// Converti le resultat de la BDD en objet Produit
 function userDatabaseToUserObject($user){
-	$produitRetour= new Produit();
+	$userRetour= new User();
+	$userRetour->setUserId($user['UserID']);
+	$userRetour->setMail($user['UserEmail']);
+	$userRetour->setNom($user['UserFirstName']);
+	$userRetour->setPrenom($user['UserLastName']);
+	$userRetour->setMotDePasse($user['UserPassword']);
+	$userRetour->setVille($user['UserCity']);
+	$userRetour->setCodePostal($user['UserZip']);
+	$userRetour->setNumeroTel($user['UserPhone']);
+	$userRetour->setPays($user['UserCountry']);
+	$userRetour->setAdresse($user['UserAddress']);
+	$userRetour->setAdresseComp($user['UserAddress2']);
 	
-	$produitRetour.setNomProduit($produit['ProductName']);
-	$produitRetour.setPrixProduit($produit['ProductPrice']);
-	$produitRetour.setPoidsProduit($produit['ProductWeight']);
-	$produitRetour.setDescriptionCaddie($produit['ProductCartDesc']);
-	$produitRetour.setDescriptionCourte($produit['ProductShortDesc']);
-	$produitRetour.setImageProduit($produit['ProductImage']);
-	$produitRetour.setProductCategoryID($produit['ProductCategoryID']);
-	$produitRetour.setStatusProduit($produit['ProductLive']);
-	
-	return $produitRetour;
+	return $userRetour;
 }
 
 ?>

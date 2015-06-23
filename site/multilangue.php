@@ -15,7 +15,7 @@ $fr = array(
 	'nouveauxProduits'		=> 'Nouveaux produits',
 		
 	// Catalog page
-	'produitsSontDispo' 	=> 'produits sont disponibles',
+	'produitsSontDispo' 	=> 'produit(s) disponible(s)',
 	'trierPar'				=> 'Trier par',
 	'nouveauxProduits'		=> 'Nouveaux produits',	
 	'nomDuProduitA_Z'		=> 'Nom du produit A - Z',
@@ -127,6 +127,7 @@ $fr = array(
 	'auteursDuSite'			=> 'Auteurs du site',	
 
 	//Panier
+	'panier'				=> 'Panier',
 	'produit'				=> 'Produit',
 	'description'			=> 'Description',
 	'quantite'				=> 'Quantité',
@@ -136,7 +137,23 @@ $fr = array(
 	'prixTotal'				=> 'Prix Total (TTC)',
 	'prixTax'				=> 'Prix HT',
 	'prixTotalTTC'			=> 'Prix TTC',
-	'element'				=> 'Element(s)'
+	'element'				=> 'Element(s)',
+	'continuerAchat'		=> ' Continuer les achats',	
+		
+	// FAQ
+	'connexionImpossible'	=> 'Vous n\'arrivez pas à vous connecter',
+	'connexionImpossibleRep'=> 'C\'est moche',
+	'commandePassePasArrive'=> 'Vous avez commandé vos produits depuis plus de six mois, et vous n\'avez toujours rien reçu',
+	'cmdPassePasArriveRep'	=> 'Patientez',
+	'remboursementEchange'	=> 'Vous souhaitez être remboursé ou procéder à un échange',
+	'remboursementEchRep'	=> 'Donner c\'est donner reprendre c\'est voler',		
+	'coiffeurSirkis'		=> 'Vous avez retrouvé le coiffeur de Nicola Sirkis',
+	'coiffeurSirkisRep'		=> 'Félicitations ! Vous disposez de 30% de réduction sur la prochaine commande',
+	'articleIntrouvable'	=> 'Vous ne trouvez pas l\'article que vous désirez acheter',
+	'articleIntrouvableRep'	=> 'Tel un aventurier, continuez à chercher',		
+	'connaissanceGroupe'	=> 'Vous connaissez tous les membres du groupe depuis 1981',
+	'connaissanceGroupeRep'	=> 'On s\'en fout ! Seul Nicola Sirkis compte',
+	'connexionPanier'		=> 'Je me connecte'
 		
 );
 
@@ -155,7 +172,7 @@ $en = array(
 	'nouveauxProduits'		=> 'New products',
 		
 	// Catalog page
-	'produitsSontDispo' 	=> 'products are available',
+	'produitsSontDispo' 	=> 'product(s) are available',
 	'trierPar'				=> 'Sort By',
 	'nouveauxProduits'		=> 'New products',	
 	'nomDuProduitA_Z'		=> 'Product name A - Z',
@@ -268,6 +285,7 @@ $en = array(
 	'auteursDuSite'			=> 'Site Authors',
 		
 	//Panier
+	'panier'				=> 'Shopping Cart',
 	'produit'				=> 'Product',
 	'description'			=> 'Description',
 	'quantite'				=> 'Quantity',
@@ -277,8 +295,23 @@ $en = array(
 	'prixTotal'				=> 'Total Price',
 	'prixTax'				=> 'Exclusive of Taxes',
 	'prixTotalTTC'			=> 'Total',
-	'element'				=> 'Item(s)'
+	'element'				=> 'Item(s)',
+	'continuerAchat'		=> ' Continue Shopping',	
 		
+	// FAQ
+	'connexionImpossible'	=> 'You can\'t log in',
+	'connexionImpossibleRep'=> 'So bad',
+	'commandePassePasArrive'=> 'You ordered your product for more than six months, and you still have not received anything',
+	'cmdPassePasArriveRep'	=> 'Wait',
+	'remboursementEchange'	=> 'You want to be refunded or to exchange',
+	'remboursementEchRep'	=> 'Take back stuff? Go out thief!',
+	'coiffeurSirkis'		=> 'You found Nicola sirkis\'s hairdresser',
+	'coiffeurSirkisRep'		=> 'Congratulations! You have 30% discount on the next order',
+	'articleIntrouvable'	=> 'Can not find the item you want to buy',
+	'articleIntrouvableRep'	=> 'As an adventurer, keep looking',
+	'connaissanceGroupe'	=> 'You know all the members of the group since 1981',
+	'connaissanceGroupeRep'	=> 'Who cares! Only Nicola Sirkis is important',
+	'connexionPanier'		=> 'Log me in'
 		
 );
 

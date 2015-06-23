@@ -15,8 +15,8 @@ class Produit {
 	public $productImage; //image du produit
 	public $productCategoryID; //id de la categorie du prix
 	public $productStock; //stock du produit
-	public $productLive; // ??? si le produit tu peux être mis en ligne
-	public $productUnlimited; // ???
+	public $productLive; // si le produit tu peux être mis en ligne
+	public $productUnlimited; // flag indique si le produit est nouveau (même si la signifie n'est tout autre)
 	public $productLocation; //???
 	
 	
@@ -29,9 +29,11 @@ class Produit {
 		$this->productWeight="";
 		$this->productCartDesc="";
 		$this->productShortDesc="";
+		$this->productLongDesc="";
 		$this->productImage="";
 		$this->productCategoryID="";
 		$this->productLive="";
+		$this->productUnlimited=""; 
 	}
 	
 	
@@ -93,6 +95,14 @@ class Produit {
 		return $this->productShortDesc=$descriptionCourtes;
 	}
 	
+	function getDescriptionLongue(){
+		return $this->productLongDesc;
+	}
+	
+	function setDescriptionLongue($descriptionLongue){
+		return $this->productLongDesc=$descriptionLongue;
+	}
+	
 	function getImageProduit(){
 		return $this->productImage;
 	}
@@ -115,6 +125,14 @@ class Produit {
 	
 	function setStatusProduit($statusProduit){
 		return $this->productLive=$statusProduit;
+	}
+	
+	function getEstNouveauProduit(){
+		return $this->productUnlimited;
+	}
+	
+	function setEstNouveauProduit($estNouveau){
+		return $this->productUnlimited=$estNouveau;
 	}
 }
 

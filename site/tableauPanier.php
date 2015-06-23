@@ -1,10 +1,11 @@
 <?php 
-
 function creationTableauPanier($caddie){
-	echo "<table class=\"table table-bordered\">";
-	creationEnteteTableauPanier();
-	creationCorpTableauPanier($caddie);
-	echo "</table>";
+	if (isset($caddie) && $caddie != null){
+		echo "<table class=\"table table-bordered\">";
+		creationEnteteTableauPanier();
+		creationCorpTableauPanier($caddie);
+		echo "</table>";
+	}
 }
 
 function creationEnteteTableauPanier(){
@@ -30,16 +31,16 @@ function creationEnteteTableauPanier(){
 	echo "</thead>";
 }
 
-function creationColonneQuantitePanier(){
+function creationColonneQuantitePanier($quantite,$indexLigne,$caddie){
 	echo "<div class=\"input-append\">";
-	echo "<input type=\"text\" size=\"16\" id=\"appendedInputButtons\" placeholder=\"1\" style=\"max-width:34px\" class=\"span1\">";
-	echo "<button type=\"button\" class=\"btn\"><i class=\"icon-minus\"></i></button>";
-	echo "<button type=\"button\" class=\"btn\"><i class=\"icon-plus\"></i></button>";
-	echo "<button type=\"button\" class=\"btn btn-danger\"><i class=\"icon-remove icon-white\"></i></button>";
+	echo "<input type=\"text\" size=\"16\" id=\"appendedInputButtons\" value=\"$quantite\" style=\"max-width:34px\" class=\"span1\" disabled>";
+	echo "<button type=\"button\" name=\"btnMoins\" onclick=\"refreshPanierRetrait($quantite,$indexLigne);\" class=\"btn\"><i class=\"icon-minus\"></i></button>";
+	echo "<button type=\"button\" name=\"btnPlus\" onclick=\"refreshPanierAjout($quantite,$indexLigne);\" class=\"btn\"><i class=\"icon-plus\"></i></button>";
+	echo "<button type=\"button\" name=\"btnSuppr\" onclick=\"refreshPanierSuppression($indexLigne);\" class=\"btn \"><i class=\"icon-remove icon-white\"></i></button>";
 	echo "</div>";
 }
 
-function creationContenuColonnePanier($ligne){
+function creationContenuColonnePanier($ligne,$indexLigne,$caddie){
 	//produit
 	$produit=$ligne->getProduit();
 	//quantite du produit dans la ligne
@@ -47,22 +48,24 @@ function creationContenuColonnePanier($ligne){
 	//prix du produit
 	$prix = $produit->getPrixProduit();
 	echo "<td>";
-	echo $produit->getImageProduit();
+	echo "<img width=\"60\" src=".$produit->getImageProduit()." alt=".$produit->getNomProduit()."/>";
 	echo "</td>";
 	echo "<td>";
+	echo "<b>".$produit->getNomProduit()."</b>";
+	echo "<br />";
 	echo $produit->getDescriptionCaddie();
 	echo "</td>";
 	echo "<td>";
-	creationColonneQuantitePanier();
+	creationColonneQuantitePanier($quantite,$indexLigne,$caddie);
 	echo "</td>";
 	echo "<td>";
-	echo "".$prix;
+	echo "".formatDevise($prix);
 	echo "</td>";
 	echo "<td>";
-	echo round(calculPrixTVA($prix),2,PHP_ROUND_HALF_UP);
+	echo formatDevise(round(calculPrixTVA($prix),2,PHP_ROUND_HALF_UP));
 	echo "</td>";
 	echo "<td>";
-	echo "".$prix;
+	echo "".formatDevise($prix);
 	echo "</td>";
 }
 
@@ -72,7 +75,7 @@ function creationTotalCorpTableauPanier($caddie){
 	echo afficherLibelle('prixTax');
 	echo "</td>";
 	echo "<td>";
-	echo calculTaxePrix($caddie);
+	echo formatDevise(calculTaxePrix($caddie));
 	echo "</td>";
 	echo "</tr>";
 	echo "<tr>";
@@ -80,7 +83,7 @@ function creationTotalCorpTableauPanier($caddie){
 	echo afficherLibelle('prixTotal');
 	echo "</td>";
 	echo "<td class=\"label label-important\">";
-	echo "<strong>".calculTotalPrix($caddie)."</strong>";
+	echo "<strong>".formatDevise(calculTotalPrix($caddie))."</strong>";
 	echo "</td>";
 	echo "</tr>";
 }
@@ -92,7 +95,7 @@ function creationCorpTableauPanier($caddie){
 	$nbLigne=count($ligneCaddie);
 	for($i=0;$i<$nbLigne;$i++){
 		echo "<tr>";
-		creationContenuColonnePanier($ligneCaddie[$i]);
+		creationContenuColonnePanier($ligneCaddie[$i],$i,$caddie);
 		echo "</tr>";
 	}
 	creationTotalCorpTableauPanier($caddie);

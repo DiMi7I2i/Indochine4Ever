@@ -1,14 +1,15 @@
-body {padding-top: 0;}
-a, a:hover{color:#444;}
+body {padding-top: 0;background-color:white;color:black}
+p{color:black};
+a, a:hover{color:silver;}
 .clr{clear:both;}
 .navbar-fixed-top, .navbar-fixed-bottom {position: relative;}
-#header{padding:8px 0 4px; border-bottom:4px solid #444;margin-bottom:14px }
+#header{padding:8px 0 4px; border-bottom:4px solid red;margin-bottom:14px }
 #header a{text-decoration:none; color:#444;}
 #logoM{float:left;}
-.thumbnail img{ max-width:100%}
-.thumbnail:hover{ -webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0; border:1px solid #eee}
+.thumbnail img{ max-width:100%;height: 250px;}
+.thumbnail:hover{ -webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0; border:1px solid orange}
 .thumbnail h4{line-height:42px}
-hr.soften {margin: 8px 0 4px; background:#ddd;}
+hr.soften {margin: 8px 0 4px; background:red;}
 /* Fade in fade out transition  */
 #srchFld {background: url(assets/img/search.png) no-repeat right center;border-radius: 0;padding: 4px;margin: 0;line-height: 16px;}
 #myCarousel .btn{position:absolute; bottom:10%; right:17%; padding:2% 6%; z-index:9999}
@@ -22,15 +23,15 @@ hr.soften {margin: 8px 0 4px; background:#ddd;}
 .carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
 .carousel .active.left {left:0;opacity:0;z-index:2;}
 .carousel .next {left:0;opacity:1;z-index:1;}
-.navbar-inner {padding-left: 0;padding-right: 0;}
+.navbar-inner {padding-left: 0;padding-right: 0;background-image:linear-gradient(to bottom, #B04346, grey);}
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: white;background-color: #CF0007;text-shadow: none;}
 /* Sidebar--------- */
 #sidebar .bs-docs-sidenav > li > a {border: 0; }
-#sidebar ul{margin-top:0px; padding:0}
-#sidebar ul li {  border-bottom:1px solid #e5e5e5; }
+#sidebar ul{margin-top:0px; padding:0;color:black}
+#sidebar ul li { border-bottom:1px solid #e5e5e5; }
 #sidebar ul li a.dropdown-toggle.collapsed{background-image: url("assets/img/arrowR.png");background-color:transparent; }
 #sidebar ul li a.dropdown-toggle{background-image: url("assets/img/arrowD.png"); background-color:#F8F8F8;}
-#sidebar ul li a{background-image: url("assets/img/arrowR.png"); border-radius:0;  padding-left:24px;background-position: 6px center;background-repeat: no-repeat;}
+#sidebar ul li a{color:black;background-image: url("assets/img/arrowR.png"); border-radius:0;  padding-left:24px;background-position: 6px center;background-repeat: no-repeat;}
 #sidebar ul ul{ padding:0; margin:0; list-style:none;font-size:12px; background:#F8F8F8; display:none;}
 #sidebar ul ul li{padding:0 14px; border-bottom:1px solid #e5e5e5; }
 #sidebar ul li li {border-bottom:0; border-top:1px solid #e5e5e5;}
@@ -52,8 +53,11 @@ hr.soften {margin: 8px 0 4px; background:#ddd;}
 .cart{border:1px solid #ddd;}
 .thumbnail>a{display:block; text-align:center}
 .thumbnail h5,.thumbnail p{text-align:center}
-.thumbnail{background:#fff;}
-.thumbnail {position:relative;border: 1px solid white;}
+.thumbnail p{min-height:60px}
+.thumbnail{background:white;}
+.thumbnail {position:relative;border: 1px solid #e5e5e5;}
+/* Detail page*/
+.descriptionLongueDetail{min-height:140px}
 /* Compair product page */
 .table td[align=right] {text-align: right;}
 .tag {background:url(assets/img/new.png) no-repeat 0 0; position: absolute; display:block; top: -4px;right: -18px; height:48px; width:48px;}
@@ -66,7 +70,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"],
 input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;}
 /* Footer section--------------- */
-#footerSection a{font-size:11px; padding:0 13px; line-height:24px; display:block; }
+#footerSection a{color:black;font-size:11px; padding:0 13px; line-height:24px; display:block; }
 #footerSection a:hover{background:#eee;  }
 #footerSection  #socialMedia a{ min-width:25px; display:inline; margin-right:6px; text-align:center; line-height:1.5em;}
 #footerSection  #socialMedia a:hover{background:none;}
