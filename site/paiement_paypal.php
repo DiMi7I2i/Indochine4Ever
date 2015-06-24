@@ -22,9 +22,9 @@ if (isset($caddiePaypal) && $caddiePaypal != null){
 		echo 	'<a href="catalogue_page.php" class="btn btn-large"><i class="icon-arrow-left"></i>'.afficherLibelle('continuerAchat').'</a>';
 		echo 	"<input name=\"currency_code\" type=\"hidden\" value=$deviseVersPaypal />";
 		echo 	'<input name="shipping" type="hidden" value="0.00" />';
-		echo 	'<input name="return" type="hidden" value="http://localhost/bootTest/git/siteEcommerce/siteEcommerce/catalogue_page.php?resetCaddie=1" />';
+		echo 	'<input name="return" type="hidden" value="http://localhost/siteEcommerce/catalogue_page.php?resetCaddie=1" />';
 		echo 	'<input name="rm" value="2" type="hidden" />';
-		echo 	'<input name="cancel_return" type="hidden" value="http://localhost/bootTest/git/siteEcommerce/siteEcommerce/produit_sommaire_page.php" />';
+		echo 	'<input name="cancel_return" type="hidden" value="http://localhost/siteEcommerce/produit_sommaire_page.php" />';
 		echo 	'<input name="cmd" type="hidden" value="_cart" />';
 		echo	'<input type="hidden" name="upload" value="1">';
 		echo 	'<input name="business" type="hidden" value="dimitrichkopf-facilitator@hotmail.com" />';
